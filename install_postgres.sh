@@ -51,9 +51,9 @@ echo -e "------确保系统时间不早于实际时间----------\n"
 sleep 1
 echo -e "\033[43;30m------该脚本仅支持CentOS 6/7----------${COLOR_END}\n"
 echo -e "${RED_COLOR}请确保该安装脚本的三个核心组件在同一目录下:${COLOR_END}"
-echo -e "	${RED_COLOR}install_postgres.sh${COLOR_END}(安装脚本)"
-echo -e "	${RED_COLOR}dependencies_pgsql/${COLOR_END}(依赖组件rpm包)"
-echo -e "	${RED_COLOR}postgresql_xxx.tar.gz${COLOR_END}(PGSQL安装包，下载地址https://www.postgresql.org/ftp/source/)"
+echo -e "${RED_COLOR}install_postgres.sh${COLOR_END}(安装脚本)"
+echo -e "${RED_COLOR}dependencies_pgsql/${COLOR_END}(依赖组件rpm包)"
+echo -e "${RED_COLOR}postgresql_xxx.tar.gz${COLOR_END}(PGSQL安装包，下载地址https://www.postgresql.org/ftp/source/)"
 
 echo
 sleep 1
