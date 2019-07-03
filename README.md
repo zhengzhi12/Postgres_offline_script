@@ -1,0 +1,2 @@
+# Postgres_offline_script
+PostgreSQL离线一键安装脚本（需要依赖文件夹和PostgreSQL源文件）
