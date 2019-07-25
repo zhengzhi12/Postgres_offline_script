@@ -67,11 +67,11 @@ fi
 echo -e "${YELLOW_COLOR}----设置密码参数，也可以通过编辑脚本头的两个密码变量来跳过此步骤----${COLOR_END}\n"
 
 if [ ! -n "$postgres_user_password" ]; then
-read -p "请为即将在Linux系统中添加的postgres用户设置密码:" postgres_user_password
+read -p "请为即将在Linux系统中添加的postgres用户设置密码:(输入有误请按ctrl+backspace)" postgres_user_password
 fi
 
 if [ ! -n "$pg_db_password" ]; then
-read -p "请为数据库设置密码:" pg_db_password
+read -p "请为数据库设置密码:(输入有误请按ctrl+backspace)" pg_db_password
 fi
 
 echo 
@@ -89,6 +89,7 @@ sleep 2
 echo 
 echo -e "${LIGHTBLUE_WHITE}---------------------Installing Denpendencies---------------------${COLOR_END}"
 sleep 1
+
 cd `dirname $0`
 if [ $CentOS_Version == '6' ]; then
 rpm -Uvh --force --nodeps dependencies_pgsql/*el6*.rpm
