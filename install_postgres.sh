@@ -89,7 +89,7 @@ sleep 2
 echo 
 echo -e "${LIGHTBLUE_WHITE}---------------------Installing Denpendencies---------------------${COLOR_END}"
 sleep 1
-
+cd `dirname $0`
 if [ $CentOS_Version == '6' ]; then
 rpm -Uvh --force --nodeps dependencies_pgsql/*el6*.rpm
 else
